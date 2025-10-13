@@ -40,14 +40,14 @@ html,body{
     left: 0;
     bottom: -4px;
     height: 1px;    
-    width: 100%;    
+    width: 0;
     background-color: rgb(255, 245, 245); 
-    transition: height 0.3s ease, background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .categories a:hover::after {
-    height: 2px;                 
-     background-color: #241c19;
+    width: 100%;               
+     
 }
 
 
