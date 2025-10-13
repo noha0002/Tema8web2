@@ -6,11 +6,7 @@ html,body{
     padding: 0;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    
-}
+
 
 /* --------------------------------------------------------------------*/
 
@@ -23,9 +19,40 @@ a{
     list-style: none;
     background-color: #342925;
     padding: 40px;
-
+   gap: 30px;
     
 }
+
+
+
+.categories a {
+    position: relative;
+    color: white;
+    letter-spacing: 5px;
+    text-decoration: none; 
+}
+
+
+
+.categories a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 1px;    
+    width: 100%;    
+    background-color: rgb(255, 245, 245); 
+    transition: height 0.3s ease, background-color 0.3s ease;
+}
+
+.categories a:hover::after {
+    height: 2px;                 
+     background-color: #241c19;
+}
+
+
+
+
 
 footer{
     display: flex;
@@ -34,6 +61,18 @@ footer{
     background-color: #361313;
     padding: 40px;
 
+}
+.footer{
+     padding: 40px;
+   gap: 30px;
+}
+
+.footer a{
+     text-decoration: underline;
+    color: #B46E09;
+    letter-spacing: 5px;
+    text-underline-offset: 5px;
+    
 }
 /* --------------------------------------------------------------------*/
 
@@ -54,18 +93,17 @@ footer{
 }
 
 .main-text {
+ font-family: gfs didot, serif;
   position: absolute;
-  top: 48%;
-  left: 26%;
+  top: 45%;
+  left: 17%;
   color: white;
   text-align: center;
-  width: 50%; 
+  width: 70%;
 }
 
 .main-h1 {
-  font-size: 70px;
-  font-family: 'Times New Roman', Times, serif;
-  white-space: pre-wrap;
+  font-size: 10vh;
   margin: 0;
   color: #846130;
   text-shadow: 2px 2px 5px #453319;
@@ -73,19 +111,24 @@ footer{
 }
 
 .main-p {
+    color: #AC7C39;
+    text-shadow: 2px 2px 5px #64481f;
  
 }
 
 .main-button{
     position: absolute;
-  top: 75%;
-  left: 43%;
+  top: 80%;
+  left: 44.2%;
   width: 200px;
   color: #AF731F;
   background-color: #463833;
   padding: 8px;
   text-align: center;
 }
+
+
+
 
 
 
