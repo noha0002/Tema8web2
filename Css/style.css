@@ -184,16 +184,16 @@ position: absolute;
 .flexbox-productlist{
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
     gap: 150px;
     justify-content: center;
     flex-direction: row;
     color: #FFFEFD;
     top: 110%;
     left: 3%;
-   
-   
     
 }
+
 .flexbox-productlist p{
     color: #BEB5A8;
     font-size: 2.5vh;
@@ -202,6 +202,7 @@ position: absolute;
 }
 
 .flexbox-productlist h2{
+    
     font-size: 2.7vh;
     color: #FFFEFD;
     
