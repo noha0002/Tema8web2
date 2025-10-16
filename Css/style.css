@@ -5,6 +5,12 @@ html,body{
     margin: 0;
     padding: 0;
     font-family: gfs didot, serif ;
+    background-color: #E3DBD0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -269,6 +275,78 @@ position: absolute;
 
 
 /* --------------------------------------------------------------------*/
+
+
+
+/* beauty ---------------------------------------------------*/
+.beauty-flex{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   width: 90%;
+   gap: 50px;
+   margin: 0 auto; 
+  justify-items: center;
+  padding-top: 2%;
+ 
+    
+}
+.beauty-flex img{
+    width: 100%;
+     height: auto;
+    display: block;
+    
+}
+
+.beauty-border{
+   border: #64481f solid 2px;
+   background-color: white;
+   padding-bottom: 50px;
+}
+
+.hr-beauty {
+  width: 60%;
+  margin-top: 5%;
+  margin-left: 4%;
+  background-color: #521D1E;
+  display: inline-block; 
+  height: 2px; 
+  border: none;
+}
+
+
+
+
+.beauty-more{
+    text-align: center;
+    padding: 10px;
+    font-size: 2.5vh;
+    color: #000000;
+   border:#000000 1.3px solid;
+    width: 190px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.beauty-all{
+  text-align: center;
+    margin-top: 5%;
+    margin-left: 2%;
+    padding: 0.1px;
+    font-size: 2vh;
+    color: #ffffff;
+    width: 190px;
+    background-color: #521D1E;
+    }
+.low-high {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 15%;
+  position: relative; 
+  top: 50%;           
+}
+
+
 
 
 
