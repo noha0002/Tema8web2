@@ -24,16 +24,22 @@ h1,h2,p,a{
 
 
 /* header & footer ---------------------------------------------------*/
-.categories{
-    display: flex;
-    justify-content: right;
-    list-style: none;
-    background-color: #342925;
-    padding: 40px;
-   gap: 30px;
-    
+.categories {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 30px;
+  background-color: #342925;
+  padding: 40px;
 }
 
+.categories img {
+  position: absolute;
+ left: 50%;
+ margin-top: -40px;
+   display: block;
+   
+}
 
 
 .categories a {
@@ -378,6 +384,7 @@ position: absolute;
   border-bottom: #B46E09 solid 1px;
   text-align: center;
 }
+
 
 
 /* --------------------------------------------------------------------*/
