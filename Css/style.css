@@ -30,28 +30,36 @@ h1,h2,p,a{
   align-items: center;
   gap: 30px;
   background-color: #342925;
-  padding: 40px;
+  padding: 20px;
+  position: relative;
 }
 
-.categories img {
+.logo {
+  position: relative; 
+  height: 80px; 
+}
+
+.logo a {
   position: absolute;
- left: 50%;
- margin-top: -40px;
-   display: block;
-   
+  right: 240px;
+  top: -30px; 
+  display: block;
 }
 
+.logo img {
+  max-height: 120px; 
+  width: auto; 
+  display: block;
+}
 
-.categories a {
+.menu-link {
     position: relative;
     color: white;
     letter-spacing: 5px;
     text-decoration: none; 
 }
 
-
-
-.categories a::after {
+.menu-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -59,15 +67,15 @@ h1,h2,p,a{
     height: 1px;    
     width: 100%;
     background-color: rgb(255, 245, 245); 
-    
 }
 
-.categories a:hover::after {
+.menu-link:hover::after {
     transition: 0.3s ease background-color, 0.3s ease;
     height: 2px;  
     background-color: #453319;         
-     
 }
+
+
 
 
 
