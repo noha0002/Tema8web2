@@ -5,6 +5,16 @@ html,body{
     margin: 0;
     padding: 0;
     font-family: gfs didot, serif ;
+    background-color: #E3DBD0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,h2,p,a{
+  letter-spacing: 6%;
 }
 
 
@@ -14,28 +24,42 @@ html,body{
 
 
 /* header & footer ---------------------------------------------------*/
-.categories{
-    display: flex;
-    justify-content: right;
-    list-style: none;
-    background-color: #342925;
-    padding: 40px;
-   gap: 30px;
-    
+.categories {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  gap: 30px;
+  background-color: #342925;
+  padding: 20px;
+  position: relative;
 }
 
+.logo {
+  position: relative; 
+  height: 80px; 
+}
 
+.logo a {
+  position: absolute;
+  right: 240px;
+  top: -30px; 
+  display: block;
+}
 
-.categories a {
+.logo img {
+  max-height: 120px; 
+  width: auto; 
+  display: block;
+}
+
+.menu-link {
     position: relative;
     color: white;
     letter-spacing: 5px;
     text-decoration: none; 
 }
 
-
-
-.categories a::after {
+.menu-link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -43,15 +67,15 @@ html,body{
     height: 1px;    
     width: 100%;
     background-color: rgb(255, 245, 245); 
-    
 }
 
-.categories a:hover::after {
+.menu-link:hover::after {
     transition: 0.3s ease background-color, 0.3s ease;
     height: 2px;  
     background-color: #453319;         
-     
 }
+
+
 
 
 
@@ -184,16 +208,16 @@ position: absolute;
 .flexbox-productlist{
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
     gap: 150px;
     justify-content: center;
     flex-direction: row;
     color: #FFFEFD;
     top: 110%;
     left: 3%;
-   
-   
     
 }
+
 .flexbox-productlist p{
     color: #BEB5A8;
     font-size: 2.5vh;
@@ -202,6 +226,7 @@ position: absolute;
 }
 
 .flexbox-productlist h2{
+    
     font-size: 2.7vh;
     color: #FFFEFD;
     
@@ -270,6 +295,207 @@ position: absolute;
 /* --------------------------------------------------------------------*/
 
 
+
+/* beauty ---------------------------------------------------*/
+
+
+.beauty-h1{
+  letter-spacing: 6%;
+  color: #463833;
+  padding-left: 4%;
+  padding-top: 5%;
+
+}
+
+
+.beauty-flex{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   width: 50%;
+   gap: 50px;
+   margin: 0 auto; 
+  justify-items: center;
+  padding-top: 2%;
+  letter-spacing: 6%;
+  padding-bottom: 10%;
+  padding-right: 45%;
+ 
+    
+}
+
+
+.beauty-flex img{
+    width: 100%;
+     height: auto;
+    display: block;
+    
+}
+
+.beauty-border{
+   border: #64481f solid 2px;
+   background-color: white;
+   padding-bottom: 50px;
+}
+
+.hr-beauty {
+  width: 60%;
+  margin-top: 2%;
+  margin-left: 2.3%;
+  background-color: #521D1E;
+  display: inline-block; 
+  height: 2px; 
+  border: none;
+}
+
+.beauty-more{
+    text-align: center;
+    padding: 10px;
+    font-size: 2.5vh;
+    color: #000000;
+   border:#000000 1.3px solid;
+    width: 300px;
+    margin: 0 auto;
+    letter-spacing: 6%;
+    margin-top: 5%;
+    display: inline-block;
+}
+
+
+
+.beauty-all{
+  text-align: center;
+    margin-top: 3.5%;
+    margin-left: 4%;
+    padding: 10px;
+    width: 130px;
+    background-color: #521D1E;
+    letter-spacing: 6%;
+    }
+
+    .beauty-all a{
+      font-size: 2.2vh;
+    color: #ffffff;
+    }
+
+.low-high {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  padding-right: 5%;
+  color: #B46E09;
+}
+
+.low-group {
+  display: flex;           
+  gap: 10px;               
+  align-items: center;
+  border-bottom: #B46E09 solid 1px;
+  text-align: center;
+}
+
+
+
+/* --------------------------------------------------------------------*/
+
+
+
+/* product ---------------------------------------------------*/
+
+
+.Product-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  padding-top: 15%;
+ margin: 0 auto; 
+  justify-items: center;
+  padding-bottom: 10%;
+  gap: 10%;
+  
+}
+
+.Product-grid img{
+    width: 100%;
+     height: auto;
+    display: block;
+    border: #000000 solid 1px;
+    
+}
+
+
+
+.product-info h1{
+    font-size: 3vh;
+    color: #521D1E;
+    margin: 10px 0 30px 0;
+    letter-spacing: 6%;
+   font-weight: 300;
+}
+
+.rate{
+  font-size: 2.5vh;
+}
+
+.price{
+    font-size: 3vh;
+    color: #B46E09;
+    text-align: end;
+}
+
+.info{
+  padding-top: 10%;
+  letter-spacing: 6%;
+  color: #000000;
+  padding-bottom: 15%;
+  width: 80%;
+  font-size: 2.5vh;
+   font-weight: 300;
+   text-align: justify;
+}
+
+.product-box{
+  background-color: #463833;
+  padding: 15px;
+  width: 190px; 
+  display: flex;
+}
+
+.product-box p{
+  color: white;
+  justify-content: center;
+  margin: 0 auto;
+  letter-spacing: 6%;
+
+}
+
+.product-info hr{
+  margin-top: 20%;
+  color: #521D1E;
+}
+
+.product-details p{
+  margin-bottom: 10px;
+}
+
+.month{
+  text-align:end; 
+  color: #545E4F;
+}
+.details-gold{
+  color: #B46E09;
+}
+
+.related-products{
+  text-align: left;
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------*/
 
 
 
