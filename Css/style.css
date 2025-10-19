@@ -213,8 +213,8 @@ position: absolute;
     justify-content: space-around;
     /*flex-direction: row;*/
     color: #FFFEFD;
-    /*top: 110%;*/
-    width: 100%;
+    top: 125%;
+    left: 3%;
     
 }
 
