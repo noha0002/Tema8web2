@@ -195,8 +195,8 @@ position: absolute;
   justify-content: center;  
   align-items: center;     
   width: 100%;
-   padding-top: 20%; 
-   padding-bottom: 20%;        
+   padding-top: 10%; 
+   padding-bottom: 5%;        
   
 }
 
@@ -206,15 +206,15 @@ position: absolute;
 }
 
 .flexbox-productlist{
-    position: absolute;
+    /*position: absolute;*/
     display: flex;
-    flex-wrap: wrap;
-    gap: 150px;
-    justify-content: center;
-    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    /*gap: 100px;*/
+    justify-content: space-around;
+    /*flex-direction: row;*/
     color: #FFFEFD;
-    top: 110%;
-    left: 3%;
+    /*top: 110%;*/
+    width: 100%;
     
 }
 
@@ -286,7 +286,9 @@ position: absolute;
   align-items: center;
   font-size: 3vh;
   position: relative;
-  top: -120px;
+  /*top: -120px;*/
+  margin-top: 5%;
+  margin-bottom: 8%;
   color: #B46E09;
 }
 
@@ -307,20 +309,30 @@ position: absolute;
 
 }
 
+#beauty-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /*width: 50%;*/
+  gap: 50px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+ 
+}
 
 .beauty-flex{
-   display: grid;
-   grid-template-columns: repeat(4,1fr);
-   width: 50%;
-   gap: 50px;
-   margin: 0 auto; 
-  justify-items: center;
-  padding-top: 2%;
-  letter-spacing: 6%;
-  padding-bottom: 10%;
-  padding-right: 45%;
- 
-    
+   display: flex;
+   flex-direction: column; 
+   flex-wrap: wrap; 
+   
+   
+   justify-items: center;
+   padding-top: 2%;
+   letter-spacing: 6%;
+   padding-bottom: 10%;
+   padding-right: 45%;
+   
 }
 
 
