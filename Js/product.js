@@ -2,7 +2,6 @@ const produktMain = document.querySelector('#produktMain');
 
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id") || 1;
-const category = params.get("category");
 
 //console.log(id);
 
