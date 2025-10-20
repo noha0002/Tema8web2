@@ -206,15 +206,14 @@ position: absolute;
 }
 
 .flexbox-productlist{
-    /*position: absolute;*/
+    position: absolute;
     display: flex;
-    /*flex-wrap: wrap;*/
-    /*gap: 100px;*/
+    gap: 100px;
     justify-content: space-around;
-    /*flex-direction: row;*/
+    flex-direction: row;
     color: #FFFEFD;
-    top: 125%;
-    left: 3%;
+    top: 100%;
+    left: 6%;
     
 }
 

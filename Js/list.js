@@ -35,7 +35,8 @@ fetch(`https://dummyjson.com/products/category/${category}`)
         <section class="beauty-flex">
         <div>
           <div class="beauty-border">
-            <img src="${element.images}" alt="${element.title}" />
+            <img src="${element.images[0]}" alt="${element.title}" />
+
           </div>
 
           <div>

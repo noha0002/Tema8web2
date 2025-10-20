@@ -18,7 +18,8 @@ function showProduct(product) {
     //console.log(product);
 
     produktMain.innerHTML += `<section class="Product-grid">
-        <img src="${product.images}" alt="${product.title}" />
+       <img src="${product.images[0]}" alt="${product.title}" />
+
 
         <div class="product-info">
           <h1>${product.title}</h1>
