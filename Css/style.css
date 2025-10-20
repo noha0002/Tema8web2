@@ -400,12 +400,49 @@ position: absolute;
   display: flex;           
   gap: 10px;               
   align-items: center;
-  border-bottom: #B46E09 solid 1px;
+  
   text-align: center;
+  background-color: #E3DBD0;
+  border: none;
+  border-bottom: #B46E09 solid 1px;
+  color: #B46E09;
 }
 
+.low-group:hover {
+  color: #BEB5A8;
+  cursor: pointer;
+}
 
+/* discount */
 
+.tilbud .pris {
+  opacity: 70%;
+  text-decoration: line-through;
+  color: #521D1E;
+}
+
+.discounted p:last-child {
+  background-color: #521D1E;
+  color: #ffffff;
+  padding: 0.5rem;
+}
+
+.discounted {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.end {
+  grid-column: 4/5;
+}
+
+.now {
+  grid-column: 1/3;
+}
+
+.hidden {
+  display: none;
+}
 /* --------------------------------------------------------------------*/
 
 
